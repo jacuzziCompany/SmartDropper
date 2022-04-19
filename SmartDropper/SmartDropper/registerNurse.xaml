@@ -1,15 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="SmartDropper.login">
-   
-
-
+             x:Class="SmartDropper.registerNurse">
     <ContentPage.Content>
         <AbsoluteLayout>
             <Image Source="backGroundImage.png"></Image>
             <ImageButton Source="buttonBack.png" Margin="20, 50"></ImageButton>
-            <Label Text="Log in" TextColor="#147E78" FontSize="40" Margin="20, 80" 
+            <Label Text="Sign up" TextColor="#147E78" FontSize="40" Margin="20, 80" 
                    FontFamily="Comfortaa"
                    ></Label>
 
@@ -24,12 +21,10 @@
             <Frame  BorderColor="Black" AbsoluteLayout.LayoutBounds="35, 420, 350, 79" CornerRadius="6">
                 <Entry Placeholder="Password" TextColor="#147e78" PlaceholderColor="#147e78" ></Entry>
             </Frame>
-
-
-            <Button x:Name="secondLoginButton"
-                Clicked="secondLoginButton_clicked"
+            <Button
+                Clicked="secondSignUpButton_clicked"
                 VerticalOptions="Center"
-                Text="Log in"
+                Text="Sign up"
                 Font="Large"
                 FontAttributes="Bold"
                 TextColor="White"
@@ -40,6 +35,7 @@
                 WidthRequest="350"
                 AbsoluteLayout.LayoutBounds="35,530"
                ></Button>
+
 
         </AbsoluteLayout>
     </ContentPage.Content>

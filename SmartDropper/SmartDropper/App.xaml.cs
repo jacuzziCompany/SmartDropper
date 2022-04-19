@@ -10,7 +10,8 @@ namespace SmartDropper
         {
             InitializeComponent();
 
-            MainPage = new firstPage();
+            MainPage = new NavigationPage(new SmartDropper.firstPage());
+            
         }
 
         protected override void OnStart()

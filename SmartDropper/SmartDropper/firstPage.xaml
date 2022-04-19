@@ -9,7 +9,7 @@
                 <Image Source="logoFirstPage.png" AbsoluteLayout.LayoutBounds="0.5,0.12" AbsoluteLayout.LayoutFlags="PositionProportional"></Image>
 
                 <Button x:Name="loginButton" 
-                
+                Clicked="loginButton_clicked"
                 VerticalOptions="Center"
                 Text="Log in"
                 Font="Large"
@@ -23,7 +23,8 @@
                 Margin="35,500, 15, 120"
         ></Button>
 
-                <Button
+                <Button x:Name="signUpButton"
+                Clicked="signUpButton_clicked"
                 VerticalOptions="Center"
                 Text="SIGN UP"
                 Font="Large"

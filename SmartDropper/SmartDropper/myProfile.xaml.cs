@@ -10,16 +10,11 @@ using Xamarin.Forms.Xaml;
 namespace SmartDropper
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class login : ContentPage
+    public partial class myProfile : ContentPage
     {
-        public login()
+        public myProfile()
         {
             InitializeComponent();
         }
-        private async void secondLoginButton_clicked(object sender, EventArgs e)
-        {
-            await Navigation.PushAsync(new Home());
-        }
-
     }
 }

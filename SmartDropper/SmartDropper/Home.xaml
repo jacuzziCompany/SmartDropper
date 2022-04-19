@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SmartDropper.Home">
+    <ContentPage.Content>
+        <AbsoluteLayout>
+            <Image Source="backGroundImage.png"></Image>
+            <ImageButton Source="buttonBack.png" Margin="20, 50"></ImageButton>
+            <Label Text="Home" TextColor="#147E78" FontSize="40" Margin="20, 80" 
+                   FontFamily="Comfortaa"
+                   ></Label>
+            <Button 
+                
+                VerticalOptions="Center"
+                Text="MY PROFILE"
+                Font="Large"
+                FontAttributes="Bold"
+                TextColor="White"
+                BackgroundColor="#147e78 "
+                BorderColor="#147e78 "
+                BorderWidth="3"
+                HeightRequest="50"
+                WidthRequest="340"
+                Margin="35,180, 15, 50 "
+                
+        ></Button>
+
+            <Button 
+                
+                VerticalOptions="Center"
+                Text="LIST OF PATIENTS"
+                Font="Large"
+                FontAttributes="Bold"
+                TextColor="White"
+                BackgroundColor="#147e78 "
+                BorderColor="#147e78 "
+                BorderWidth="3"
+                HeightRequest="50"
+                WidthRequest="340"
+                Margin="35,260, 15, 50 "
+                
+        ></Button>
+
+            <Button 
+                
+                VerticalOptions="Center"
+                Text="ADD PATIENT"
+                Font="Large"
+                FontAttributes="Bold"
+                TextColor="White"
+                BackgroundColor="#147e78 "
+                BorderColor="#147e78 "
+                BorderWidth="3"
+                HeightRequest="50"
+                WidthRequest="340"
+                Margin="35,340, 15, 50 "
+                
+        ></Button>
+
+            <Button 
+                
+                VerticalOptions="Center"
+                Text="LIST OF MEDICINE"
+                Font="Large"
+                FontAttributes="Bold"
+                TextColor="White"
+                BackgroundColor="#147e78 "
+                BorderColor="#147e78 "
+                BorderWidth="3"
+                HeightRequest="50"
+                WidthRequest="340"
+                Margin="35,420, 15, 50 "
+                
+        ></Button>
+
+
+        </AbsoluteLayout>
+    </ContentPage.Content>
+</ContentPage>
