@@ -16,5 +16,28 @@ namespace SmartDropper
         {
             InitializeComponent();
         }
+
+        private async void endTherapyButton_clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new endTherapy());
+        }
+        private async void startTherapyButton_clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new chooseMedicine());
+        }
+        private async void addMedicationButton_clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new addMedication());
+        }
+        private async void deletePatientButton_clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new deletePatient());
+        }
+
+        private async void backButton_clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new Home());
+        }
+
     }
 }

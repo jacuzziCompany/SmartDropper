@@ -1,14 +1,29 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="SmartDropper.chooseMedicine">
+             x:Class="SmartDropper.chooseMedicine"
+             NavigationPage.HasNavigationBar="False">
     <ContentPage.Content>
         <AbsoluteLayout>
             <Image Source="backGroundImage.png"></Image>
-            <ImageButton Source="buttonBack.png" Margin="20, 50"></ImageButton>
+            <ImageButton Clicked ="backButton_clicked" Source="buttonBack.png" Margin="20, 50"></ImageButton>
             <Label Text="Choose Medicine" TextColor="#147E78" FontSize="40" Margin="20, 80" 
                    FontFamily="Comfortaa"
                    ></Label>
+
+            
+            <Frame BorderColor="Black" AbsoluteLayout.LayoutBounds="35, 170, 350, 79" CornerRadius="6">
+                <Label Text="name" TextColor="#147e78"  ></Label>
+            </Frame>
+
+            <Frame  BorderColor="Black" AbsoluteLayout.LayoutBounds="35, 280, 350, 79" CornerRadius="6">
+                <Label Text="name" TextColor="#147e78"  ></Label>
+            </Frame>
+            
+            <Frame  BorderColor="Black" AbsoluteLayout.LayoutBounds="35, 390, 350, 79" CornerRadius="6">
+                <Label Text="name" TextColor="#147e78"  ></Label>
+            </Frame>
+
         </AbsoluteLayout>
     </ContentPage.Content>
 </ContentPage>

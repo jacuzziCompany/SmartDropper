@@ -20,6 +20,10 @@ namespace SmartDropper
         {
             await Navigation.PushAsync(new Home());
         }
+        private async void backButton_clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new firstPage());
+        }
 
     }
 }

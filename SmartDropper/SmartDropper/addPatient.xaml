@@ -1,11 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="SmartDropper.addPatient">
+             x:Class="SmartDropper.addPatient"
+             NavigationPage.HasNavigationBar="False">
     <ContentPage.Content>
         <AbsoluteLayout>
             <Image Source="backGroundImage.png"></Image>
-            <ImageButton Source="buttonBack.png" Margin="20, 50"></ImageButton>
+            <ImageButton Clicked="backButton_clicked" Source="buttonBack.png" Margin="20, 50"></ImageButton>
             <Label Text="Add patient" TextColor="#147E78" FontSize="40" Margin="20, 80" 
                    FontFamily="Comfortaa"
                    ></Label>
@@ -25,6 +26,7 @@
                 <Entry Placeholder="Diagnos" TextColor="#147e78" PlaceholderColor="#147e78" ></Entry>
             </Frame>
             <Button
+                Clicked="createButton_clicked"
                 VerticalOptions="Center"
                 Text="Create"
                 Font="Large"

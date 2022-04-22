@@ -1,16 +1,17 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="SmartDropper.Home">
+             x:Class="SmartDropper.Home"
+             NavigationPage.HasNavigationBar="False">
     <ContentPage.Content>
         <AbsoluteLayout>
             <Image Source="backGroundImage.png"></Image>
-            <ImageButton Source="buttonBack.png" Margin="20, 50"></ImageButton>
+            
             <Label Text="Home" TextColor="#147E78" FontSize="40" Margin="20, 80" 
                    FontFamily="Comfortaa"
                    ></Label>
             <Button 
-                
+                Clicked="myProfileButton_clicked"
                 VerticalOptions="Center"
                 Text="MY PROFILE"
                 Font="Large"
@@ -26,7 +27,7 @@
         ></Button>
 
             <Button 
-                
+                Clicked="listOfPatientsButton_clicked"
                 VerticalOptions="Center"
                 Text="LIST OF PATIENTS"
                 Font="Large"
@@ -58,7 +59,7 @@
         ></Button>
 
             <Button 
-                
+                Clicked="listOfMedicineButton_clicked"
                 VerticalOptions="Center"
                 Text="LIST OF MEDICINE"
                 Font="Large"

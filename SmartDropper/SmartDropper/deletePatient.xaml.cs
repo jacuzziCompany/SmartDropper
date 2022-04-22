@@ -16,5 +16,15 @@ namespace SmartDropper
         {
             InitializeComponent();
         }
+
+        private async void yesButton_clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new listOfPAtients());
+        }
+
+        private async void noButton_clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new listOfPAtients());
+        }
     }
 }
