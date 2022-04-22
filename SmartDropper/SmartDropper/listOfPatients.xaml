@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SmartDropper.listOfPAtients">
+    <ContentPage.Content>
+        <AbsoluteLayout Margin="1">
+            <Image Source="backGroundImage.png"></Image>
+            <ImageButton Source="buttonBack.png" Margin="20, 50"></ImageButton>
+            <Label Text="List Of Patients" TextColor="#147E78" FontSize="40" Margin="20, 80" 
+                   FontFamily="Comfortaa"
+                   ></Label>
+
+            <Frame   AbsoluteLayout.LayoutBounds="25,140,170,135" HeightRequest="150" BorderColor="#147e78" CornerRadius="30" >
+                <StackLayout>
+                    <Label Margin="0,-5,0,-15" Text="Name Surname" FontSize="Medium" TextColor="#147E78" HorizontalTextAlignment="Center" FontFamily="Comfortaa"></Label>
+                    <Label Margin="0,35,0,-5" Text="Room" TextColor="#147E78" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontFamily="Comfortaa"></Label>
+                    <Label Margin="0,0,0,-5" Text="Time" TextColor="#147E78" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontFamily="Comfortaa"></Label>
+                    <Label Margin="0,0,0,0" Text="50%" TextColor="#147E78" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontFamily="Comfortaa"></Label>
+                </StackLayout>
+            </Frame>
+
+            <Frame   AbsoluteLayout.LayoutBounds="220,140,170,135" HeightRequest="150" BorderColor="#147e78" CornerRadius="30" >
+                <StackLayout>
+                    <Label Margin="0,-5,0,-15" Text="Name Surname" FontSize="Medium" TextColor="#147E78" HorizontalTextAlignment="Center" FontFamily="Comfortaa"></Label>
+                    <Label Margin="0,35,0,-5" Text="Room" TextColor="#147E78" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontFamily="Comfortaa"></Label>
+                    <Label Margin="0,0,0,-5" Text="Time" TextColor="#147E78" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontFamily="Comfortaa"></Label>
+                    <Label Margin="0,0,0,0" Text="50%" TextColor="#147E78" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontFamily="Comfortaa"></Label>
+                </StackLayout>
+            </Frame>
+        </AbsoluteLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -42,7 +42,7 @@
         ></Button>
 
             <Button 
-                
+                Clicked="addPatientButton_clicked"
                 VerticalOptions="Center"
                 Text="ADD PATIENT"
                 Font="Large"
