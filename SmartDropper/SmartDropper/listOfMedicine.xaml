@@ -1,41 +1,34 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="SmartDropper.myProfile"
+             x:Class="SmartDropper.listOfMedicine"
              NavigationPage.HasNavigationBar="False">
     <ContentPage.Content>
         <AbsoluteLayout>
             <Image Source="backGroundImage.png"></Image>
             <ImageButton Clicked = "backButton_clicked" Source="buttonBack.png" Margin="20, 50"></ImageButton>
-            <Label Text="My profile" TextColor="#147E78" FontSize="40" Margin="20, 80" 
+            <Label Text="List of Medicine" TextColor="#147E78" FontSize="40" Margin="20, 80" 
                    FontFamily="Comfortaa"
                    ></Label>
 
-            <Label Text="Name:" TextColor="#147E78" FontSize="27" Margin="40,180" ></Label>
-            <Label Text="Surname:" TextColor="#147E78" FontSize="27" Margin="40,225" ></Label>
-
-            <Button 
-                Clicked="exitButton_clicked"
+            <Frame  BorderColor="Black" AbsoluteLayout.LayoutBounds="35, 200, 350, 79" CornerRadius="6">
+                <Label Text="Name of medication" TextColor="#147e78"  ></Label>
+            </Frame>
+            <Button
+                Clicked ="addMedicationButton_Clicked"
                 VerticalOptions="Center"
-                Text="EXIT"
+                Text="Add Medication "
                 Font="Large"
                 FontAttributes="Bold"
                 TextColor="White"
                 BackgroundColor="#147e78 "
                 BorderColor="#147e78 "
                 BorderWidth="3"
-                HeightRequest="52"
-                WidthRequest="360"
-                Margin="25,580, 15, 50 "
-                CornerRadius="15"
-    
-             ></Button>
-            
-            
-               
+                HeightRequest="50"
+                WidthRequest="350"
+                AbsoluteLayout.LayoutBounds="35,530"
+               ></Button>
 
-
-            
 
         </AbsoluteLayout>
     </ContentPage.Content>

@@ -24,6 +24,33 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Compile Update="addPatient.xaml.cs">
+      <DependentUpon>addPatient.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="chooseMedicine.xaml.cs">
+      <DependentUpon>chooseMedicine.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="listOfMedicine.xaml.cs">
+      <DependentUpon>listOfMedicine.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="addMedication.xaml.cs">
+      <DependentUpon>addMedication.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="endTherapy.xaml.cs">
+      <DependentUpon>endTherapy.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="deletePatient.xaml.cs">
+      <DependentUpon>deletePatient.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Patient.xaml.cs">
+      <DependentUpon>Patient.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="startTherapy.xaml.cs">
+      <DependentUpon>startTherapy.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
     <EmbeddedResource Update="firstPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
@@ -34,6 +61,30 @@
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="myProfile.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="addPatient.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="chooseMedicine.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="listOfMedicine.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="addMedication.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="endTherapy.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="deletePatient.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Patient.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="startTherapy.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="registerNurse.xaml">

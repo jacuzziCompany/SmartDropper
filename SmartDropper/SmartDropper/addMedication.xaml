@@ -1,31 +1,26 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="SmartDropper.registerNurse"
+             x:Class="SmartDropper.addMedication"
              NavigationPage.HasNavigationBar="False">
     <ContentPage.Content>
         <AbsoluteLayout>
             <Image Source="backGroundImage.png"></Image>
-            <ImageButton Clicked = "backButton_clicked" Source="buttonBack.png" Margin="20, 50"></ImageButton>
-            <Label Text="Sign up" TextColor="#147E78" FontSize="40" Margin="20, 80" 
+            <ImageButton Clicked ="backButton_clicked" Source="buttonBack.png" Margin="20, 50"></ImageButton>
+            <Label Text="Add medication" TextColor="#147E78" FontSize="40" Margin="20, 80" 
                    FontFamily="Comfortaa"
                    ></Label>
 
             <Frame  BorderColor="Black" AbsoluteLayout.LayoutBounds="35, 200, 350, 79" CornerRadius="6">
-                <Entry Placeholder="Name" TextColor="#147e78" PlaceholderColor="#147e78" ></Entry>
+                <Entry Text="Name of medication" TextColor="#147e78"  ></Entry>
             </Frame>
-
             <Frame  BorderColor="Black" AbsoluteLayout.LayoutBounds="35, 310, 350, 79" CornerRadius="6">
-                <Entry Placeholder="Surname" TextColor="#147e78" PlaceholderColor="#147e78" ></Entry>
-            </Frame>
-
-            <Frame  BorderColor="Black" AbsoluteLayout.LayoutBounds="35, 420, 350, 79" CornerRadius="6">
-                <Entry Placeholder="Password" TextColor="#147e78" PlaceholderColor="#147e78" ></Entry>
+                <Entry Text="Amount of drops" TextColor="#147e78"  ></Entry>
             </Frame>
             <Button
-                Clicked="secondSignUpButton_clicked"
+                Clicked="addButton_clicked"
                 VerticalOptions="Center"
-                Text="Sign up"
+                Text="Add"
                 Font="Large"
                 FontAttributes="Bold"
                 TextColor="White"

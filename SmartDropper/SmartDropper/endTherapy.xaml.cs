@@ -10,20 +10,23 @@ using Xamarin.Forms.Xaml;
 namespace SmartDropper
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class login : ContentPage
+    public partial class endTherapy : ContentPage
     {
-        public login()
+        public endTherapy()
         {
             InitializeComponent();
         }
-        private async void secondLoginButton_clicked(object sender, EventArgs e)
+
+        private async void yesButton_clicked(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new Home());
+            await Navigation.PushAsync(new Patient());
         }
-        private async void backButton_clicked(object sender, EventArgs e)
+
+        private async void noButton_clicked(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new firstPage());
+            await Navigation.PushAsync(new Patient());
         }
+
 
     }
 }
