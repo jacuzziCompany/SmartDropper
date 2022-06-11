@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartDropper.Android", "Sma
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartDropper.iOS", "SmartDropper\SmartDropper.iOS\SmartDropper.iOS.csproj", "{1CC093E1-9870-4B15-A2D6-BC33C363C64C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartDropper", "SmartDropper\SmartDropper\SmartDropper.csproj", "{818B16FE-C0BB-4CC8-9A18-98FD40A180C8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SmartDropper", "SmartDropper\SmartDropper\SmartDropper.csproj", "{818B16FE-C0BB-4CC8-9A18-98FD40A180C8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

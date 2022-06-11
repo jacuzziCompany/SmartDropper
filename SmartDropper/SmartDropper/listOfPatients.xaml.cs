@@ -3,29 +3,30 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+using SmartDropper.Helpers;
+using SmartDropper.Model;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
 namespace SmartDropper
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class myProfile : ContentPage
+    public partial class listOfPAtients : ContentPage
     {
-        public myProfile()
+        public listOfPAtients()
         {
             InitializeComponent();
         }
-
-        private async void exitButton_clicked(object sender, EventArgs e)
+        protected override async void OnAppearing()
         {
-            await Navigation.PushAsync(new firstPage());
+            base.OnAppearing();
+            var posts = await Firestore.Read();
+             
         }
 
         private async void backButton_clicked(object sender, EventArgs e)
         {
             await Navigation.PushAsync(new Home());
         }
-
     }
 }

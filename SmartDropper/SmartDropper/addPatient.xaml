@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SmartDropper.addPatient"
+             NavigationPage.HasNavigationBar="False">
+    <ContentPage.Content>
+        <AbsoluteLayout>
+            <Image Source="backGroundImage.png"></Image>
+            <ImageButton Clicked="backButton_clicked" Source="buttonBack.png" Margin="20, 50"></ImageButton>
+            <Label Text="Add patient" TextColor="#147E78" FontSize="40" Margin="20, 80" 
+                   FontFamily="Comfortaa"
+                   ></Label>
+
+            <Frame  BorderColor="Black" AbsoluteLayout.LayoutBounds="35, 200, 350, 79" CornerRadius="6">
+                <Entry x:Name="nameEntry" Placeholder="Name" TextColor="#147e78" PlaceholderColor="#147e78" ></Entry>
+            </Frame>
+
+            <Frame  BorderColor="Black" AbsoluteLayout.LayoutBounds="35, 310, 350, 79" CornerRadius="6">
+                <Entry  x:Name="surnameEntry" Placeholder="Surname" TextColor="#147e78" PlaceholderColor="#147e78" ></Entry>
+            </Frame>
+
+            <Frame  BorderColor="Black" AbsoluteLayout.LayoutBounds="35, 420, 350, 79" CornerRadius="6">
+                <Entry  x:Name="hospitalRoomEntry" Placeholder="Hospital room" TextColor="#147e78" PlaceholderColor="#147e78" ></Entry>
+            </Frame>
+            <Frame  BorderColor="Black" AbsoluteLayout.LayoutBounds="35, 530, 350, 79" CornerRadius="6">
+                <Entry  x:Name="diagnoseEntry" Placeholder="Diagnos" TextColor="#147e78" PlaceholderColor="#147e78" ></Entry>
+            </Frame>
+            <Button
+                Clicked="createButton_clicked"
+                VerticalOptions="Center"
+                Text="Create"
+                Font="Large"
+                FontAttributes="Bold"
+                TextColor="White"
+                BackgroundColor="#147e78 "
+                BorderColor="#147e78 "
+                BorderWidth="3"
+                HeightRequest="50"
+                WidthRequest="350"
+                AbsoluteLayout.LayoutBounds="35,640"
+               ></Button>
+        </AbsoluteLayout>
+    </ContentPage.Content>
+</ContentPage>

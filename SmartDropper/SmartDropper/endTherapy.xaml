@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SmartDropper.endTherapy"
+             NavigationPage.HasNavigationBar="False">
+    <ContentPage.Content>
+        <StackLayout Margin="0,50,0,0">
+            <Frame   Margin="18,15,18,10" HeightRequest="200" BorderColor="#147e78" CornerRadius="30" >
+                <Label 
+                Text="Are you sure
+                that you want
+                to end therapy?"
+                TextColor="#147e78"
+                FontSize="40"
+                VerticalTextAlignment="Center"
+                HorizontalTextAlignment="Center"
+                >
+
+                </Label>
+            </Frame>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="0.5*"></ColumnDefinition>
+                    <ColumnDefinition Width="0.5*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+
+                <Button 
+                    Clicked="yesButton_clicked"
+                    Text="YES" BackgroundColor="White" TextColor="#147e78" BorderColor="#147e78" BorderWidth="1" Margin="18" CornerRadius="75">
+                </Button>
+
+                    <Button
+                    Clicked="noButton_clicked"
+                    Grid.Column="1" Text="NO" TextColor="White" BorderColor="#147e78" Margin="18" BackgroundColor="#147e78" CornerRadius="75">
+                    </Button>
+            </Grid>
+
+        </StackLayout>
+
+    </ContentPage.Content>
+</ContentPage>

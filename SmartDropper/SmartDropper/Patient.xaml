@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SmartDropper.Patient"
+             NavigationPage.HasNavigationBar="False">
+    <ContentPage.Content>
+        <AbsoluteLayout Margin="1">
+            <Image Source="backGroundImage.png"></Image>
+            <ImageButton Clicked = "backButton_clicked" Source="buttonBack.png" Margin="20, 50"></ImageButton>
+            <Label Text="Patient" TextColor="#147E78" FontSize="40" Margin="20, 80" 
+                   FontFamily="Comfortaa"
+                   ></Label>
+
+            <Frame   AbsoluteLayout.LayoutBounds="25,140,360,135" HeightRequest="150" BorderColor="#147e78" CornerRadius="30" >
+                <StackLayout>
+                    <Label Margin="0,-14,0,0"  Text="Name:" TextColor="#147E78" FontSize="20" VerticalTextAlignment="Center" FontFamily="Comfortaa"></Label>
+                    <Label Text="Surname:" TextColor="#147E78" FontSize="20" VerticalTextAlignment="Center" FontFamily="Comfortaa"></Label>
+                    <Label Text="Room:" TextColor="#147E78" FontSize="20" VerticalTextAlignment="Center" FontFamily="Comfortaa"></Label>
+                    <Label Text="Diagnose:" TextColor="#147E78" FontSize="20" VerticalTextAlignment="Center" FontFamily="Comfortaa"></Label>
+                </StackLayout>
+            </Frame>
+
+            <Frame   AbsoluteLayout.LayoutBounds="25,285,360,135" HeightRequest="150" BorderColor="#147e78" CornerRadius="30" >
+                <StackLayout>
+                    <Label Margin="0,-15,0,0" Text="Current status:" TextColor="#147E78" FontSize="30" VerticalTextAlignment="Center" FontFamily="Comfortaa"></Label>
+                    <Label Text="Surname" TextColor="#147E78"  VerticalTextAlignment="Center" FontFamily="Comfortaa"></Label>
+                    <Label Text="Room" TextColor="#147E78"  VerticalTextAlignment="Center" FontFamily="Comfortaa"></Label>
+                    <Label Text="Diagnose" TextColor="#147E78"  VerticalTextAlignment="Center" FontFamily="Comfortaa"></Label>
+                </StackLayout>
+            </Frame>
+            <Button 
+                Clicked="endTherapyButton_clicked"
+                VerticalOptions="Center"
+                Text="end therapy"
+                Font="Large"
+                FontAttributes="Bold"
+                TextColor="White"
+                BackgroundColor="#147e78 "
+                BorderColor="#147e78 "
+                BorderWidth="3"
+                HeightRequest="52"
+                WidthRequest="360"
+                Margin="25,430, 15, 50 "
+                CornerRadius="15"
+        ></Button>
+            <Button 
+                Clicked="startTherapyButton_clicked"
+                VerticalOptions="Center"
+                Text="start therapy"
+                Font="Large"
+                FontAttributes="Bold"
+                TextColor="White"
+                BackgroundColor="#147e78 "
+                BorderColor="#147e78 "
+                BorderWidth="3"
+                HeightRequest="52"
+                WidthRequest="360"
+                Margin="25,485, 15, 50 "
+                CornerRadius="15"
+        ></Button>
+            <Button 
+                Clicked="addMedicationButton_clicked"
+                VerticalOptions="Center"
+                Text="add medication"
+                Font="Large"
+                FontAttributes="Bold"
+                TextColor="White"
+                BackgroundColor="#147e78 "
+                BorderColor="#147e78 "
+                BorderWidth="3"
+                HeightRequest="52"
+                WidthRequest="360"
+                Margin="25,540, 15, 50 "
+                CornerRadius="15"
+
+        ></Button>
+            <Button 
+                Clicked="deletePatientButton_clicked"
+                VerticalOptions="Center"
+                Text="delete patient"
+                Font="Large"
+                FontAttributes="Bold"
+                TextColor="White"
+                BackgroundColor="#147e78 "
+                BorderColor="#147e78 "
+                BorderWidth="3"
+                HeightRequest="52"
+                WidthRequest="360"
+                Margin="25,595, 15, 50 "
+                CornerRadius="15"
+        ></Button>
+
+        </AbsoluteLayout>
+    </ContentPage.Content>
+</ContentPage>
