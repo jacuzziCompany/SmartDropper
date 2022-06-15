@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "887482349006",
+    "project_id": "smart-dropper",
+    "storage_bucket": "smart-dropper.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:887482349006:android:019027be63a00d0ae9a79f",
+        "android_client_info": {
+          "package_name": "com.companyname.smartdropper"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "887482349006-an207rqltgj9l43lo4kitcvbf0gg3ssu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDgQFg2n0UeQCH_7FgR6mVZSolHjd1AWlA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "887482349006-an207rqltgj9l43lo4kitcvbf0gg3ssu.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "887482349006-c6kpaoh4fo1ghfioot44qrkfftf81qq7.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.companyname.SmartDropper"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
